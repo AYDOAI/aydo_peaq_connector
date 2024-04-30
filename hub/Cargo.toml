@@ -1,0 +1,19 @@
+[package]
+name = "hub"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rumqttc = "0.24.0"
+
+async-std = { version = "1.12.0", features = ["attributes", "tokio1"] }
+thiserror = "1.0.58"
+
+sp-keyring = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.9.0", default-features = false }
+sp-core = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.9.0", default-features = false }
+rand = "0.8.5"
+
+node = { path = "../node" }
+cli = { path = "../cli" }
