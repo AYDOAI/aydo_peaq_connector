@@ -172,7 +172,7 @@ impl NetworkConfig for Peaq {
         Config {
             network: "Peaq".to_string(),
             host: "https://erpc-mpfn1.peaq.network".to_string(),
-            port: 9933,
+            port: 443,
             chain_id: 3338,
         }
     }
@@ -183,7 +183,7 @@ impl NetworkConfig for Krest {
         Config {
             network: "Krest".to_string(),
             host: "https://erpc-krest.peaq.network".to_string(),
-            port: 9944,
+            port: 443,
             chain_id: 2241,
         }
     }
@@ -194,7 +194,7 @@ impl NetworkConfig for Agung {
         Config {
             network: "Agung".to_string(),
             host: "https://rpcpc1-qa.agung.peaq.network".to_string(),
-            port: 9944,
+            port: 443,
             chain_id: 9990,
         }
     }
